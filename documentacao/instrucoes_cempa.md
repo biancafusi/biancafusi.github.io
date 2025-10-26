@@ -1,11 +1,3 @@
----
-layout: post
-title: Tutorial - Utilizando o módulo monan_automation
-permalink: /documentacao/utilizacao_modulo/
----
-
-## Utilizando o módulo `monan_automation`
-
 # Passo 1. Copiar e compilar o MONAN
 
 `/home/bianca.fusinato/MONAN-workspace/MONAN-latest/MONAN_Phys_SRF_v1` -> Já compilado
