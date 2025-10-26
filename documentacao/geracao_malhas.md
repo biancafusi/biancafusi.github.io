@@ -128,8 +128,27 @@ config_geog_data_path = '/home/bianca.fusinato/MONAN-workspace/GRIDS/geog_data' 
     config_block_decomp_file_prefix = 'mesh_rgs_graph.info'
 /
 ```
+### 4.3 Modificação do `streams.init_atmosphere`:
 
-### 4.3 **Execução:** 
+Certifique-se que está sendo puxado o nome da malha gerada pelo `jigsaw`:
+
+```bash
+<streams>
+<immutable_stream name="input"
+                  type="input"
+                  filename_template="/mnt/beegfs/op_monan/jigsaw_mod/mt_sapezal_grid/mt_sapezal_grid_mpas.nc"
+                  input_interval="initial_only" />
+
+<immutable_stream name="output"
+                  type="output"
+                  filename_template="mesh_sapezal_static.nc" # nome do output
+                  packages="initial_conds"
+                  output_interval="initial_only" />
+
+# ... restante
+```
+
+### 4.4 **Execução:** 
 
 Utilize o script de submissão (`run_static.slurm`) do seu ambiente HPC para rodar o `init_atmosphere_model`.
 
