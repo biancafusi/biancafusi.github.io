@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Tutorial - Geração de Malhas MPAS/MONAN
-permalink: /documentacao/geracao_malha/
+layout: post
+title: Tutorial - Como gerar condições iniciais para o MONAN/MPAS
+permalink: /documentacao/condicoes_iniciais/
 ---
 
 # Como gerar condições iniciais para o sistema MONAN/MPAS?

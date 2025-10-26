@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Tutorial - Geração de Malhas MPAS/MONAN
-permalink: /documentacao/geracao_malha/
+layout: post
+title: Tutorial - Utilizando o módulo monan_automation
+permalink: /documentacao/utilizacao_modulo/
 ---
 
 # Utilizando o módulo `monan_automation`
