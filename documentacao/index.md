@@ -16,5 +16,3 @@ Bem-vindo(a) à seção de tutoriais. Aqui você encontrará guias práticos e d
     * *Funções principais, instalação e exemplos de uso do módulo em Python para automatizar tarefas.*
 3.  **[Como Gerar Condições Iniciais para o MONAN](/documentacao/condicoes_iniciais/)**
     * *Instruções detalhadas para criar os arquivos de CI de forma eficiente utilizando o `monan_automation`.*
-4.  **[Instruções para a operação do projeto CEMPA](/documentacao/instrucoes_cempa/)**
-    * *Instruções detalhadas para a operação utilizando o `monan_automation`.*

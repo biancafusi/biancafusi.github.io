@@ -4,11 +4,11 @@ title: Tutorial - Utilizando o módulo monan_automation
 permalink: /documentacao/utilizacao_modulo/
 ---
 
-## Utilizando o módulo `monan_automation`
+# Utilizando o módulo `monan_automation`
+
+Este tutorial é uma síntese dos passos para o usuário conseguir utilizar o módulo `monan_automation`. Este tutorial foi feito considerando versões mais antigas desse módulo, mas provém uma forma mais direta de sua utilização.
 
 # Passo 1. Copiar e compilar o MONAN
-
-`/home/bianca.fusinato/MONAN-workspace/MONAN-latest/MONAN_Phys_SRF_v1` -> Já compilado
 
 Para baixar e compilar:
 
@@ -241,13 +241,13 @@ conversion:
 
 ## Passo 4.1. Instalando o WPS
 
-Um tutorial se encontra em https://github.com/wrf-model/WPS.
+Um tutorial se encontra em `https://github.com/wrf-model/WPS`.
 
 É necessário gerar o arquivo `ungrib.exe` para produzir as condições iniciais e de contorno.
 
 ## Passo 4.2. Copiando as informaçẽs do `geogrid`
 
-Os dados são disponibilizados em: https://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html#mandatory
+Os dados são disponibilizados em: `https://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html#mandatory`
 
 O recomendado é baixar os dados de maior resolução (*Download Highest Resolution of each Mandatory Field*)
 

@@ -6,6 +6,8 @@ permalink: /documentacao/condicoes_iniciais/
 
 # Tutorial de como produzir condições iniciais utilizando o módulo `monan_automation`
 
+Este tutorial provém uma análise mais detalhada e atual do módulo `monan_automation`.
+
 ## Requisitos
 
 Para realizar este tutorial será necessário:
