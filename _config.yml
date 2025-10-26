@@ -1,5 +1,5 @@
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-title: Portifólio de Projetos e Documentações Desenvolvidas # Título que aparece na aba do navegador
-description: por Bianca Fusinato
+- jekyll-remote-theme 
+title: Portfólio de Bianca Fusinato | Tempo, Clima & Computação
+description: Estudante de PhD com experiência em modelagem atmosférica (MPAS/MONAN) e automação científica em Python.
