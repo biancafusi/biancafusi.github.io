@@ -29,10 +29,10 @@ Para acompanhar as atualizações, verifique o GitHub: https://github.com/otavio
 
 ## Instalando o WPS
 
-Focaremos em ensinar como instalar e compilar o WPS dentro do sistema EGEON.
+1) Baixar as depências necessárias; para isso recomendamos o uso do módulo disponível em `https://github.com/otaviomf123/MONAN_MPAS_auto_install`
 
-1) Baixar as depências necessárias; para isso recomendamos o uso do módulo disponível em https://github.com/otaviomf123/MONAN_MPAS_auto_install
-2) Baixar o WPS, disponível através do GitHub: https://github.com/wrf-model/WPS
+2) Baixar o WPS, disponível através do GitHub: `https://github.com/wrf-model/WPS`
+
 3) Compilar o WPS como indica o README no repositório do GitHub.
 
 Ao final, deverá conter pelo menos o arquivo `ungrib.exe`.
