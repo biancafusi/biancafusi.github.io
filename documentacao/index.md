@@ -1,5 +1,5 @@
 ---
-layout: post # Usa o layout de página para o tema
+layout: default # Usa o layout de página para o tema
 title: Documentação Técnica MPAS/MONAN
 permalink: /documentacao/ # Garante a URL amigável
 ---

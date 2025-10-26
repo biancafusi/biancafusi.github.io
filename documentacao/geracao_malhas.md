@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Tutorial - Geração de Malhas MPAS/MONAN
 permalink: /documentacao/geracao_malha/
 ---
@@ -82,3 +82,7 @@ A malha não estruturada é gerada utilizando scripts da pasta `grids/utilities/
     ```
 
 4. Geração do Static File (utilizando o `init_atmosphere_model`)
+
+O Static File contém as informações geográficas e de relevo necessárias para a simulação. Esta etapa utiliza o executável `init_atmosphere_model` do MPAS.
+
+4.1. *Configuração da Área de Trabalho:* Crie uma pasta de trabalho e linke os arquivos essenciais.
