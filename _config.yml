@@ -1,7 +1,5 @@
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme 
-title: Portfólio de Bianca Fusinato
-# Crie uma variável customizada
-tagline: Tempo, Clima & Computação
+title: Portfólio de Bianca Fusinato    | Tempo, Clima & Computação
 description: Estudante de PhD com experiência em modelagem atmosférica (MPAS/MONAN) e automação científica em Python.
