@@ -135,4 +135,101 @@ Utilize o script de submissão (`run_static.slurm`) do seu ambiente HPC para rod
 
 ## 5. Recorte de Malha (Limitando a Área de Simulação)
 
+Para simulações de área limitada, utiliza-se o pacote **MPAS-Limited-Area** para recortar o campo estático (`static file`) em uma região de interesse, otimizando o custo computacional.
 
+### 5.1. Instalação do MPAS-Limited-Area
+
+(a) Clone o Repositório e Instale as Dependências:
+
+```bash
+git clone https://github.com/MPAS-Dev/MPAS-Limited-Area.git
+cd MPAS-Limited-Area
+pip install -r requirements.txt
+```
+
+(b) Adicione ao PATH: Certifique-se que o executável create_region está acessível.
+
+```bash
+export PATH="${PATH}:/path/to/MPAS-Limited-Area"
+```
+
+(c)Teste de Instalação:
+
+```bash
+./create_region
+# Output esperado: usage: create_region... error: the following arguments are required: points
+```
+
+### 5.2. Definição e Execução do Corte
+
+Defina a Região (`.pts` file): Copie um exemplo (ex: `docs/points-examples/india.circle.pts`) e edite para definir sua região:
+
+```bash
+# Arquivo: goias_5km.pts
+Name: goias
+Type: circle
+Point: -16.68, -49.27  # Latitude e Longitude (Centro da Região)
+radius: 1000000.0      # Raio do corte em Metros
+```
+
+### 5.3 Execute o Recorte e Plote a Imagem: 
+
+Use o argumento `--plot` para visualização.
+
+```bash
+./create_region --plot goias_5km.pts /local/para/campo_estatico.nc
+```
+
+*Isso gerará uma imagem (.png) para visualização. Ao retirar o `--plot`, um novo arquivo de malha recortada será gerado.*
+
+## 6. Geração do Módulo de Partição (Para Simulação Paralela)
+
+Para executar o modelo em múltiplos núcleos de processamento (parallelism), o arquivo de malha deve ser particionado utilizando o **METIS**.
+
+### 6.1. Instalação das Dependências (GKlib e METIS)
+
+Esta é uma etapa crítica que exige que as bibliotecas sejam compiladas com caminhos específicos.
+
+(a) Instalação do GKlib (Dependência do METIS):
+
+```bash
+git clone https://github.com/KarypisLab/GKlib.git
+cd GKlib
+make config
+make
+make install
+```
+
+(b) Instalação do METIS: Ajuste o caminho do `gklib_path` conforme o diretório onde o GKlib foi instalado.
+
+```bash
+cd METIS
+make config shared=1 cc=gcc prefix=~/local gklib_path=/caminho/para/GKlib/
+make install
+```
+
+(c) Correção de Caminhos (Se necessário): Se o instalador do METIS procurar por bibliotecas em caminhos incorretos:
+
+```bash
+ln -s ~/local/lib64/libGKlib.a ~/local/lib/libGKlib.a
+```
+
+### 6.2. Particionamento da Malha
+
+Use o executável `gpmetis` para gerar o arquivo de partição (`.part.XXX`):
+
+(a) Configure o PATH e LD_LIBRARY_PATH (se necessário):
+
+```bash
+export PATH=$HOME/local/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH
+```
+
+(b) Execute o Particionamento: (O número 256 indica o número de partições/núcleos)
+
+```bash
+cd /caminho/para/o/arquivo/goias.graph.info/
+gpmetis goias.graph.info 256
+```
+
+*Isso gerará o arquivo de partição (ex: goias.graph.info.part.256).*
