@@ -8,7 +8,7 @@ permalink: /documentacao/geracao_malha/
 
 Este guia detalha o fluxo de trabalho para a geração de malhas não estruturadas e o pré-processamento estático (Static File) utilizando ferramentas como Jigsaw (desenvolvida pelo professor Pedro Peixoto/USP), MPAS-Limited-Area e módulos auxiliares em Python.
 
-![Workflow Geração da Malha](/home/bianca/Documentos/cempa/github_page/biancafusi.github.io/assets/malha.jpg)
+![Workflow Geração da Malha](/assets/malha.jpg)
 
 1. Instalação das Ferramentas Essenciais
 
