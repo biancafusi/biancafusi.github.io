@@ -25,7 +25,7 @@ Para realizar este tutorial será necessário:
 
 O módulo atualizado (versão referente à data 10.10.2025) está disponível no caminho `/mnt/beegfs/op_monan/monan_automation`.
 
-Para acompanhar as atualizações, verifique o GitHub: https://github.com/otaviomf123/monan_automation
+Para acompanhar as atualizações, verifique o GitHub: `https://github.com/otaviomf123/monan_automation`
 
 ## Instalando o WPS
 

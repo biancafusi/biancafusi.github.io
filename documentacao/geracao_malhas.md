@@ -252,3 +252,7 @@ gpmetis goias.graph.info 256
 ```
 
 *Isso gerará o arquivo de partição (ex: goias.graph.info.part.256).*
+
+# Malha produzida durante o projeto CEMPA:
+
+A malha que desenvolvi durante o projeto CEMPA, bem como os arquivos de particionamento e o campo estático se encontram nesse [link](https://drive.google.com/drive/folders/1K8-rIS8hnuMGs9WhBTa4cEF0LcG3Dj5T?usp=drive_link)
