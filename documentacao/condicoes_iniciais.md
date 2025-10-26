@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Tutorial - Como gerar condições iniciais para o MONAN/MPAS
 permalink: /documentacao/condicoes_iniciais/
 ---

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Tutorial - Instruções para a operação do projeto CEMPA
+permalink: /documentacao/instrucoes_cempa/
+---
+
 # Passo 1. Copiar e compilar o MONAN
 
 `/home/bianca.fusinato/MONAN-workspace/MONAN-latest/MONAN_Phys_SRF_v1` -> Já compilado

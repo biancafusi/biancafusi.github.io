@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Tutorial - Utilizando o módulo monan_automation
 permalink: /documentacao/utilizacao_modulo/
 ---
